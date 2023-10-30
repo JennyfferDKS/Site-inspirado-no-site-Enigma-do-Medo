@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: hsl(190, 75%, 52%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  height: 6rem;
+  /* 60px */
+
+  background-color: black;
+  color: white;
+}
+
+header .logo {
+  width: 10%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  font-size: 1.4rem;
+
+  transition: 0.5s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* section */
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: url(../assets/background/fear-background.jpg) no-repeat center
+    center fixed;
+  background-size: 100%;
+
+  padding: 2rem 3rem;
+}
+
+.intro-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.intro-content img {
+  width: 40%;
+}
+
+.intro-content h1 {
+  text-shadow: 1px 1px 10px var(--primary-color);
+}
+
+.intro-carousel {
+  width: 50%;
+}
+
+.intro-carousel img {
+  width: 100%;
+}
+
+.link-btn {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: black;
+
+  border-radius: 8px;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  transition: 0.5s ease;
+}
+
+.link-btn:hover {
+  background-color: white;
+  box-shadow: 0px 0px 20px var(--primary-color);
+  color: var(--primary-color);
+}
+
+.intro-content .link-btn {
+  width: 80%;
+}
+
+/* sobre section */
+.sobre {
+  background: url(../assets/background/background-02.png) no-repeat center
+    center fixed;
+  background-size: 100%;
+}
+
+.sobre-content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  color: white;
+}
+
+.sobre-content h1 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+.sobre-content p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.sobre-content a {
+  width: 60%;
+}
+
+/* edicoes section */
+.edicoes {
+  background-color: #130e15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+.edicao-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}
+
+.edicao-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.card-content h2 {
+  font-size: 2.2rem;
+}
+
+.card-content span {
+  color: yellow;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card-content .link-btn {
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
